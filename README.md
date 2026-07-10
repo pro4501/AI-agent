@@ -77,10 +77,10 @@ npm run preview  # Preview production build
 
 Click the ZIP upload section or drag and drop a ZIP file containing forensic data:
 
-```
+```text
 📦 Upload ZIP Archive
 ├── firewall_logs.zip
-├── memory_dump.zip  
+├── memory_dump.zip
 ├── network_capture.zip
 ```
 
@@ -94,13 +94,13 @@ The app will:
 
 Upload specific forensic files directly:
 
-```
+```text
 📁 Upload Files
 ├── syslog.log          # System logs
-├── auth.log           # Authentication logs
-├── capture.pcap       # Network capture
-├── access.csv         # Access logs
-└── events.json        # Event data
+├── auth.log            # Authentication logs
+├── capture.pcap        # Network capture
+├── access.csv          # Access logs
+└── events.json         # Event data
 ```
 
 ### 3. View Timeline
@@ -192,7 +192,7 @@ The timeline automatically generates events from:
 
 ## 🏗️ Project Structure
 
-```
+```text
 forensic-flow-ai/
 ├── ForensicFlowAI.jsx    # Main application component
 ├── App.jsx               # Application entry point
@@ -204,6 +204,11 @@ forensic-flow-ai/
 ├── tailwind.config.js    # Tailwind CSS configuration
 └── postcss.config.js     # PostCSS configuration
 ```
+
+> **Note:** View the source files in the repository:
+> - [`ForensicFlowAI.jsx`](./ForensicFlowAI.jsx) - Main component
+> - [`App.jsx`](./App.jsx) - Application entry point
+> - [`main.jsx`](./main.jsx) - React renderer
 
 ---
 
@@ -278,12 +283,12 @@ forensic-flow-ai/
 The timeline generator identifies these keywords:
 
 ### Alert Keywords
-```
+```text
 error, fail, critical, alert, denied, unauthorized, suspicious, breach, intrusion, malware, virus, attack
 ```
 
 ### Warning Keywords
-```
+```text
 warning, warn, caution, suspect, unusual, abnormal, irregular, odd, strange, unexpected
 ```
 
@@ -300,7 +305,7 @@ The application works on:
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit issues or pull requests.
+We welcome contributions! If you'd like to help improve ForensicFlowAI, please feel free to submit issues or pull requests on our GitHub repository.
 
 ---
 

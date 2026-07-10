@@ -22,35 +22,35 @@ const formatFileSize = (bytes) => {
 const getFileType = (filename) => {
   const ext = filename.split('.').pop()?.toLowerCase();
   const types = {
-    zip: { icon: '📦', color: 'bg-purple-100 text-purple-700', category: 'archive' },
-    rar: { icon: '📦', color: 'bg-purple-100 text-purple-700', category: 'archive' },
-    '7z': { icon: '📦', color: 'bg-purple-100 text-purple-700', category: 'archive' },
-    tar: { icon: '📦', color: 'bg-purple-100 text-purple-700', category: 'archive' },
-    gz: { icon: '📦', color: 'bg-purple-100 text-purple-700', category: 'archive' },
-    pcap: { icon: '🌐', color: 'bg-blue-100 text-blue-700', category: 'network' },
-    pcapng: { icon: '🌐', color: 'bg-blue-100 text-blue-700', category: 'network' },
-    cap: { icon: '🌐', color: 'bg-blue-100 text-blue-700', category: 'network' },
-    log: { icon: '📝', color: 'bg-gray-100 text-gray-700', category: 'log' },
-    txt: { icon: '📄', color: 'bg-gray-100 text-gray-700', category: 'log' },
-    json: { icon: '📋', color: 'bg-amber-100 text-amber-700', category: 'data' },
-    xml: { icon: '📋', color: 'bg-amber-100 text-amber-700', category: 'data' },
-    csv: { icon: '📊', color: 'bg-green-100 text-green-700', category: 'data' },
-    pdf: { icon: '📕', color: 'bg-red-100 text-red-700', category: 'document' },
-    doc: { icon: '📘', color: 'bg-blue-100 text-blue-700', category: 'document' },
-    docx: { icon: '📘', color: 'bg-blue-100 text-blue-700', category: 'document' },
-    jpg: { icon: '🖼️', color: 'bg-pink-100 text-pink-700', category: 'image' },
-    jpeg: { icon: '🖼️', color: 'bg-pink-100 text-pink-700', category: 'image' },
-    png: { icon: '🖼️', color: 'bg-pink-100 text-pink-700', category: 'image' },
-    exe: { icon: '⚙️', color: 'bg-red-100 text-red-700', category: 'executable' },
-    dll: { icon: '⚙️', color: 'bg-red-100 text-red-700', category: 'executable' },
-    sys: { icon: '💾', color: 'bg-indigo-100 text-indigo-700', category: 'system' },
-    mem: { icon: '💾', color: 'bg-indigo-100 text-indigo-700', category: 'memory' },
-    dmp: { icon: '💾', color: 'bg-indigo-100 text-indigo-700', category: 'memory' },
-    raw: { icon: '💿', color: 'bg-indigo-100 text-indigo-700', category: 'disk' },
-    img: { icon: '💿', color: 'bg-indigo-100 text-indigo-700', category: 'disk' },
-    iso: { icon: '💿', color: 'bg-indigo-100 text-indigo-700', category: 'disk' },
+    zip: { icon: '📦', color: 'bg-purple-900/50 text-purple-300 border border-purple-700', category: 'archive' },
+    rar: { icon: '📦', color: 'bg-purple-900/50 text-purple-300 border border-purple-700', category: 'archive' },
+    '7z': { icon: '📦', color: 'bg-purple-900/50 text-purple-300 border border-purple-700', category: 'archive' },
+    tar: { icon: '📦', color: 'bg-purple-900/50 text-purple-300 border border-purple-700', category: 'archive' },
+    gz: { icon: '📦', color: 'bg-purple-900/50 text-purple-300 border border-purple-700', category: 'archive' },
+    pcap: { icon: '🌐', color: 'bg-blue-900/50 text-blue-300 border border-blue-700', category: 'network' },
+    pcapng: { icon: '🌐', color: 'bg-blue-900/50 text-blue-300 border border-blue-700', category: 'network' },
+    cap: { icon: '🌐', color: 'bg-blue-900/50 text-blue-300 border border-blue-700', category: 'network' },
+    log: { icon: '📝', color: 'bg-slate-700/50 text-slate-300 border border-slate-600', category: 'log' },
+    txt: { icon: '📄', color: 'bg-slate-700/50 text-slate-300 border border-slate-600', category: 'log' },
+    json: { icon: '📋', color: 'bg-amber-900/50 text-amber-300 border border-amber-700', category: 'data' },
+    xml: { icon: '📋', color: 'bg-amber-900/50 text-amber-300 border border-amber-700', category: 'data' },
+    csv: { icon: '📊', color: 'bg-green-900/50 text-green-300 border border-green-700', category: 'data' },
+    pdf: { icon: '📕', color: 'bg-red-900/50 text-red-300 border border-red-700', category: 'document' },
+    doc: { icon: '📘', color: 'bg-blue-900/50 text-blue-300 border border-blue-700', category: 'document' },
+    docx: { icon: '📘', color: 'bg-blue-900/50 text-blue-300 border border-blue-700', category: 'document' },
+    jpg: { icon: '🖼️', color: 'bg-pink-900/50 text-pink-300 border border-pink-700', category: 'image' },
+    jpeg: { icon: '🖼️', color: 'bg-pink-900/50 text-pink-300 border border-pink-700', category: 'image' },
+    png: { icon: '🖼️', color: 'bg-pink-900/50 text-pink-300 border border-pink-700', category: 'image' },
+    exe: { icon: '⚙️', color: 'bg-red-900/50 text-red-300 border border-red-700', category: 'executable' },
+    dll: { icon: '⚙️', color: 'bg-red-900/50 text-red-300 border border-red-700', category: 'executable' },
+    sys: { icon: '💾', color: 'bg-indigo-900/50 text-indigo-300 border border-indigo-700', category: 'system' },
+    mem: { icon: '💾', color: 'bg-indigo-900/50 text-indigo-300 border border-indigo-700', category: 'memory' },
+    dmp: { icon: '💾', color: 'bg-indigo-900/50 text-indigo-300 border border-indigo-700', category: 'memory' },
+    raw: { icon: '💿', color: 'bg-indigo-900/50 text-indigo-300 border border-indigo-700', category: 'disk' },
+    img: { icon: '💿', color: 'bg-indigo-900/50 text-indigo-300 border border-indigo-700', category: 'disk' },
+    iso: { icon: '💿', color: 'bg-indigo-900/50 text-indigo-300 border border-indigo-700', category: 'disk' },
   };
-  return types[ext] || { icon: '📎', color: 'bg-gray-100 text-gray-700', category: 'other' };
+  return types[ext] || { icon: '📎', color: 'bg-slate-700/50 text-slate-300 border border-slate-600', category: 'other' };
 };
 
 // ============================================
@@ -59,21 +59,21 @@ const getFileType = (filename) => {
 
 const Badge = ({ children, variant = 'default' }) => {
   const variants = {
-    default: 'bg-gray-100 text-gray-700',
-    success: 'bg-green-100 text-green-700',
-    warning: 'bg-amber-100 text-amber-700',
-    danger: 'bg-red-100 text-red-700',
-    info: 'bg-blue-100 text-blue-700',
+    default: 'bg-slate-700 text-slate-200',
+    success: 'bg-green-900/50 text-green-300 border border-green-700',
+    warning: 'bg-amber-900/50 text-amber-300 border border-amber-700',
+    danger: 'bg-red-900/50 text-red-300 border border-red-700',
+    info: 'bg-blue-900/50 text-blue-300 border border-blue-700',
   };
   return <span className={`px-2 py-0.5 rounded-full text-xs font-medium ${variants[variant]}`}>{children}</span>;
 };
 
 const Card = ({ children, className = '' }) => (
-  <div className={`bg-white rounded-xl shadow-sm border border-gray-200 ${className}`}>{children}</div>
+  <div className={`bg-slate-800/80 backdrop-blur-sm rounded-xl shadow-lg border border-slate-700/50 ${className}`}>{children}</div>
 );
 
 const ProgressBar = ({ value, color = 'bg-indigo-600' }) => (
-  <div className="w-full bg-gray-200 rounded-full h-2">
+  <div className="w-full bg-slate-700 rounded-full h-2">
     <div className={`${color} h-2 rounded-full transition-all`} style={{ width: `${Math.min(value, 100)}%` }} />
   </div>
 );
@@ -422,15 +422,15 @@ const ForensicFlowAI = () => {
 
   const getEventColor = (type) => {
     const colors = {
-      alert: 'border-l-red-500 bg-red-50',
-      error: 'border-l-red-600 bg-red-50',
-      warning: 'border-l-amber-500 bg-amber-50',
-      connection: 'border-l-blue-500 bg-blue-50',
-      network: 'border-l-blue-600 bg-blue-50',
-      data: 'border-l-green-500 bg-green-50',
-      info: 'border-l-gray-500 bg-gray-50',
+      alert: 'border-l-red-500 bg-red-950/30',
+      error: 'border-l-red-600 bg-red-950/30',
+      warning: 'border-l-amber-500 bg-amber-950/30',
+      connection: 'border-l-blue-500 bg-blue-950/30',
+      network: 'border-l-blue-600 bg-blue-950/30',
+      data: 'border-l-green-500 bg-green-950/30',
+      info: 'border-l-slate-500 bg-slate-800/30',
     };
-    return colors[type] || 'border-l-gray-400 bg-gray-50';
+    return colors[type] || 'border-l-slate-400 bg-slate-800/30';
   };
 
   return (
@@ -451,68 +451,78 @@ const ForensicFlowAI = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
           {/* ZIP Upload */}
           <Card className="p-6">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+            <h2 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
               <span>📦</span> Upload ZIP Archive
             </h2>
-            <p className="text-sm text-gray-500 mb-4">
+            <p className="text-sm text-slate-400 mb-4">
               Upload a ZIP file to extract and analyze all contained forensic files
             </p>
-            <div
-              onDragOver={handleDragOver}
-              onDrop={(e) => {
-                e.preventDefault();
-                const zipFiles = Array.from(e.dataTransfer.files).filter(f => f.name.endsWith('.zip'));
-                if (zipFiles.length) handleZipUpload(zipFiles);
-              }}
-              onClick={() => zipInputRef.current?.click()}
-              className="border-2 border-dashed border-purple-300 rounded-xl p-8 text-center cursor-pointer hover:border-purple-500 hover:bg-purple-50/50 transition-all"
-            >
-              <p className="text-4xl mb-2">📦</p>
-              <p className="font-medium text-purple-700">Drop ZIP file here or click to browse</p>
-              <p className="text-xs text-gray-400 mt-2">Archives will be extracted and contents analyzed</p>
+            <div className="relative">
+              <div
+                onDragOver={handleDragOver}
+                onDrop={(e) => {
+                  e.preventDefault();
+                  const zipFiles = Array.from(e.dataTransfer.files).filter(f => f.name.endsWith('.zip'));
+                  if (zipFiles.length) handleZipUpload(zipFiles);
+                }}
+                onClick={() => zipInputRef.current?.click()}
+                className="border-2 border-dashed border-purple-500/50 rounded-xl p-8 text-center cursor-pointer hover:border-purple-400 hover:bg-purple-900/20 transition-all"
+              >
+                <p className="text-4xl mb-2">📦</p>
+                <p className="font-medium text-purple-300">Drop ZIP file here or click to browse</p>
+                <p className="text-xs text-slate-500 mt-2">Archives will be extracted and contents analyzed</p>
+              </div>
+              <input
+                ref={zipInputRef}
+                type="file"
+                accept=".zip"
+                multiple
+                onChange={(e) => {
+                  if (e.target.files?.length) handleZipUpload(Array.from(e.target.files));
+                  e.target.value = '';
+                }}
+                className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+              />
             </div>
-            <input
-              ref={zipInputRef}
-              type="file"
-              accept=".zip"
-              multiple
-              onChange={(e) => handleZipUpload(Array.from(e.target.files))}
-              className="hidden"
-            />
           </Card>
 
           {/* Regular File Upload */}
           <Card className="p-6">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+            <h2 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
               <span>📁</span> Upload Files
             </h2>
-            <p className="text-sm text-gray-500 mb-4">
+            <p className="text-sm text-slate-400 mb-4">
               Upload log files, PCAP captures, CSV, JSON, and more
             </p>
-            <div
-              onDragOver={handleDragOver}
-              onDrop={(e) => {
-                e.preventDefault();
-                const otherFiles = Array.from(e.dataTransfer.files).filter(f => !f.name.endsWith('.zip'));
-                if (otherFiles.length) handleFileUpload(otherFiles);
-              }}
-              onClick={() => fileInputRef.current?.click()}
-              className="border-2 border-dashed border-gray-300 rounded-xl p-8 text-center cursor-pointer hover:border-indigo-500 hover:bg-indigo-50/50 transition-all"
-            >
-              <p className="text-4xl mb-2">📤</p>
-              <p className="font-medium text-gray-700">Drop files here or click to browse</p>
-              <p className="text-xs text-gray-400 mt-2">
-                Supports: .log, .txt, .csv, .json, .xml, .pcap, .pcapng, .pdf, .jpg, .png, .exe, .dll, and more
-              </p>
+            <div className="relative">
+              <div
+                onDragOver={handleDragOver}
+                onDrop={(e) => {
+                  e.preventDefault();
+                  const otherFiles = Array.from(e.dataTransfer.files).filter(f => !f.name.endsWith('.zip'));
+                  if (otherFiles.length) handleFileUpload(otherFiles);
+                }}
+                onClick={() => fileInputRef.current?.click()}
+                className="border-2 border-dashed border-indigo-500/50 rounded-xl p-8 text-center cursor-pointer hover:border-indigo-400 hover:bg-indigo-900/20 transition-all"
+              >
+                <p className="text-4xl mb-2">📤</p>
+                <p className="font-medium text-indigo-300">Drop files here or click to browse</p>
+                <p className="text-xs text-slate-500 mt-2">
+                  Supports: .log, .txt, .csv, .json, .xml, .pcap, .pcapng, .pdf, .jpg, .png, .exe, .dll, and more
+                </p>
+              </div>
+              <input
+                ref={fileInputRef}
+                type="file"
+                multiple
+                accept=".log,.txt,.csv,.json,.xml,.pcap,.pcapng,.cap,.pdf,.doc,.docx,.jpg,.jpeg,.png,.gif,.exe,.dll,.sys,.mem,.dmp,.raw,.img,.iso"
+                onChange={(e) => {
+                  if (e.target.files?.length) handleFileUpload(Array.from(e.target.files));
+                  e.target.value = '';
+                }}
+                className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+              />
             </div>
-            <input
-              ref={fileInputRef}
-              type="file"
-              multiple
-              accept=".log,.txt,.csv,.json,.xml,.pcap,.pcapng,.cap,.pdf,.doc,.docx,.jpg,.jpeg,.png,.gif,.exe,.dll,.sys,.mem,.dmp,.raw,.img,.iso"
-              onChange={(e) => handleFileUpload(Array.from(e.target.files))}
-              className="hidden"
-            />
           </Card>
         </div>
 
@@ -520,12 +530,12 @@ const ForensicFlowAI = () => {
         {isProcessing && (
           <Card className="p-6 mb-8">
             <div className="flex items-center gap-4">
-              <div className="animate-spin w-8 h-8 border-3 border-indigo-600 border-t-transparent rounded-full" />
+              <div className="animate-spin w-8 h-8 border-3 border-indigo-500 border-t-transparent rounded-full" />
               <div className="flex-1">
-                <p className="font-medium text-gray-800">{processingStatus}</p>
-                <ProgressBar value={progress} color="bg-indigo-600" />
+                <p className="font-medium text-white">{processingStatus}</p>
+                <ProgressBar value={progress} color="bg-indigo-500" />
               </div>
-              <span className="text-sm text-gray-500">{Math.round(progress)}%</span>
+              <span className="text-sm text-slate-400">{Math.round(progress)}%</span>
             </div>
           </Card>
         )}
@@ -540,12 +550,12 @@ const ForensicFlowAI = () => {
           ].map((stat, i) => (
             <Card key={i} className="p-4">
               <div className="flex items-center gap-3">
-                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${stat.color} flex items-center justify-center text-xl text-white`}>
+                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${stat.color} flex items-center justify-center text-xl text-white shadow-lg`}>
                   {stat.icon}
                 </div>
                 <div>
-                  <p className="text-2xl font-bold text-gray-800">{stat.value}</p>
-                  <p className="text-xs text-gray-500">{stat.label}</p>
+                  <p className="text-2xl font-bold text-white">{stat.value}</p>
+                  <p className="text-xs text-slate-400">{stat.label}</p>
                 </div>
               </div>
             </Card>
@@ -554,15 +564,15 @@ const ForensicFlowAI = () => {
 
         {/* Timeline */}
         <Card className="mb-8">
-          <div className="p-5 border-b border-gray-200 flex items-center justify-between">
-            <h2 className="text-xl font-semibold text-gray-800 flex items-center gap-2">
+          <div className="p-5 border-b border-slate-700 flex items-center justify-between">
+            <h2 className="text-xl font-semibold text-white flex items-center gap-2">
               <span>📅</span> Timeline
               <Badge variant="info">{events.length} events</Badge>
             </h2>
             {events.length > 0 && (
               <button
                 onClick={() => setEvents([])}
-                className="text-sm text-red-600 hover:text-red-800"
+                className="text-sm text-red-400 hover:text-red-300 transition-colors"
               >
                 Clear Timeline
               </button>
@@ -573,8 +583,8 @@ const ForensicFlowAI = () => {
             {events.length === 0 ? (
               <div className="p-12 text-center">
                 <p className="text-5xl mb-4">📅</p>
-                <p className="text-gray-500">Upload files to generate a timeline</p>
-                <p className="text-sm text-gray-400 mt-2">
+                <p className="text-slate-400">Upload files to generate a timeline</p>
+                <p className="text-sm text-slate-500 mt-2">
                   Events are extracted from log files, timestamps, and file metadata
                 </p>
               </div>
@@ -586,21 +596,21 @@ const ForensicFlowAI = () => {
                   
                   {events.map((event, index) => (
                     <div key={event.id} className={`relative mb-4 border-l-4 rounded-r-lg p-4 ${getEventColor(event.type)}`}>
-                      <div className="absolute -left-[22px] top-5 w-4 h-4 rounded-full bg-white border-2 border-indigo-500 flex items-center justify-center text-xs">
+                      <div className="absolute -left-[22px] top-5 w-4 h-4 rounded-full bg-slate-800 border-2 border-indigo-500 flex items-center justify-center text-xs">
                         {getEventIcon(event.type)}
                       </div>
                       
                       <div className="flex items-start justify-between gap-4">
                         <div className="flex-1">
-                          <p className="font-medium text-gray-800">{event.event}</p>
-                          <div className="flex items-center gap-3 mt-1 text-sm text-gray-500">
-                            <span className="bg-white/50 px-2 py-0.5 rounded">{event.source}</span>
+                          <p className="font-medium text-white">{event.event}</p>
+                          <div className="flex items-center gap-3 mt-1 text-sm text-slate-400">
+                            <span className="bg-slate-700/50 px-2 py-0.5 rounded border border-slate-600">{event.source}</span>
                             <Badge variant={event.type === 'alert' ? 'danger' : event.type === 'error' ? 'danger' : event.type === 'warning' ? 'warning' : 'default'}>
                               {event.type}
                             </Badge>
                           </div>
                         </div>
-                        <span className="text-sm text-gray-400 whitespace-nowrap">
+                        <span className="text-sm text-slate-500 whitespace-nowrap">
                           {formatDate(event.timestamp)}
                         </span>
                       </div>
@@ -614,15 +624,15 @@ const ForensicFlowAI = () => {
 
         {/* Uploaded Files */}
         <Card>
-          <div className="p-5 border-b border-gray-200 flex items-center justify-between">
-            <h2 className="text-xl font-semibold text-gray-800 flex items-center gap-2">
+          <div className="p-5 border-b border-slate-700 flex items-center justify-between">
+            <h2 className="text-xl font-semibold text-white flex items-center gap-2">
               <span>📂</span> Uploaded Files
               <Badge variant="info">{files.length} files</Badge>
             </h2>
             {files.length > 0 && (
               <button
                 onClick={clearAll}
-                className="text-sm text-red-600 hover:text-red-800"
+                className="text-sm text-red-400 hover:text-red-300 transition-colors"
               >
                 Clear All
               </button>
@@ -633,16 +643,16 @@ const ForensicFlowAI = () => {
             {files.length === 0 ? (
               <div className="p-12 text-center">
                 <p className="text-5xl mb-4">📁</p>
-                <p className="text-gray-500">No files uploaded yet</p>
+                <p className="text-slate-400">No files uploaded yet</p>
               </div>
             ) : (
-              <div className="divide-y">
+              <div className="divide-y divide-slate-700">
                 {files.map((file) => (
-                  <div key={file.id} className="p-4 flex items-center gap-4 hover:bg-gray-50">
+                  <div key={file.id} className="p-4 flex items-center gap-4 hover:bg-slate-700/30 transition-colors">
                     <span className="text-2xl">{file.type.icon}</span>
                     <div className="flex-1 min-w-0">
-                      <p className="font-medium text-gray-800 truncate">{file.name}</p>
-                      <div className="flex items-center gap-3 text-sm text-gray-500">
+                      <p className="font-medium text-white truncate">{file.name}</p>
+                      <div className="flex items-center gap-3 text-sm text-slate-400">
                         <span>{formatFileSize(file.size)}</span>
                         <span>•</span>
                         <span className={`px-2 py-0.5 rounded-full text-xs ${file.type.color}`}>
@@ -660,7 +670,7 @@ const ForensicFlowAI = () => {
                       {file.analyzed && <Badge variant="success">Analyzed</Badge>}
                       <button
                         onClick={() => removeFile(file.id)}
-                        className="text-gray-400 hover:text-red-600 p-2"
+                        className="text-slate-500 hover:text-red-400 p-2 transition-colors"
                         title="Remove"
                       >
                         🗑️
@@ -675,7 +685,7 @@ const ForensicFlowAI = () => {
 
         {/* Supported File Types */}
         <Card className="mt-8 p-6">
-          <h2 className="text-lg font-semibold text-gray-800 mb-4">Supported File Types</h2>
+          <h2 className="text-lg font-semibold text-white mb-4">Supported File Types</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
             {[
               { ext: 'ZIP', icon: '📦', desc: 'Archives' },
@@ -691,11 +701,11 @@ const ForensicFlowAI = () => {
               { ext: 'IMG', icon: '💿', desc: 'Disk images' },
               { ext: 'MEM', icon: '💾', desc: 'Memory dumps' },
             ].map((type, i) => (
-              <div key={i} className="flex items-center gap-2 p-2 bg-gray-50 rounded-lg">
+              <div key={i} className="flex items-center gap-2 p-2 bg-slate-700/50 rounded-lg border border-slate-600">
                 <span>{type.icon}</span>
                 <div>
-                  <p className="font-medium text-sm">{type.ext}</p>
-                  <p className="text-xs text-gray-400">{type.desc}</p>
+                  <p className="font-medium text-sm text-white">{type.ext}</p>
+                  <p className="text-xs text-slate-400">{type.desc}</p>
                 </div>
               </div>
             ))}
@@ -705,7 +715,7 @@ const ForensicFlowAI = () => {
 
       {/* Footer */}
       <footer className="bg-black/30 backdrop-blur-sm border-t border-white/10 py-4 mt-12">
-        <div className="max-w-7xl mx-auto px-6 text-center text-gray-400 text-sm">
+        <div className="max-w-7xl mx-auto px-6 text-center text-slate-500 text-sm">
           ForensicFlowAI - AI-Powered Forensic Analysis
         </div>
       </footer>
